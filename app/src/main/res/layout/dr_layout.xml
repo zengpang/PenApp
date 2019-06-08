@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/write">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:id="@+id/dr_gif"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="3dp"
+      android:text="Welcome"
+      android:textStyle="bold"
+      android:textSize="22dp"
+      android:id="@+id/dr_text_welcome"
+      android:textColor="@color/seablue"
+      android:layout_below="@id/dr_gif"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/dr_text_welcome"
+        android:layout_marginTop="20dp"
+        android:hint="请输入用户名"
+        android:textSize="15dp"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dr_username_et"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/dr_username_et"
+        android:layout_centerHorizontal="true"
+        android:hint="请输入密码"
+        android:textSize="15dp"
+
+        android:id="@+id/dr_password_et"
+        android:password="true"
+        android:layout_marginTop="20dp"/>
+
+     <CheckBox
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/dr_password_et"
+         android:text="是否记住密码"
+
+         android:id="@+id/dr_remberpassword_et"
+         android:layout_alignLeft="@id/dr_password_et"/>
+      <com.dd.CircularProgressButton
+          android:layout_width="250dp"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:background="@color/seablue"
+
+          android:textSize="20dp"
+          android:textColor="@color/write"
+          android:id="@+id/dr_bt"
+          app:cpb_textIdle="登  陆"
+          app:cpb_cornerRadius="48dp"
+          android:onClick="dr_bt"
+          android:layout_below="@id/dr_remberpassword_et"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@id/dr_bt"
+           android:layout_below="@id/dr_bt"
+           android:id="@+id/dr_fogetpassword"
+           android:layout_marginTop="10dp"
+           android:textSize="10dp"
+           android:text="忘记密码? "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@id/dr_fogetpassword"
+            android:text="|"
+            android:textSize="10dp"
+
+            android:layout_below="@id/dr_bt"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/dr_bt"
+             android:layout_alignTop="@id/dr_fogetpassword"
+             android:text=">>>注册"
+             android:textSize="10dp"
+             android:onClick="bt_dr_zc"
+             android:id="@+id/dr_zc"
+             android:textColor="@color/seablue"
+             android:layout_alignRight="@id/dr_bt"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignTop="@id/dr_zc"
+              android:text="还没有账号"
+              android:textSize="10dp"
+              android:layout_toLeftOf="@id/dr_zc"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</android.support.percent.PercentFrameLayout>

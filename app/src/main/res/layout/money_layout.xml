@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.yalantis.phoenix.PullToRefreshView
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pull_money_refsh"
+    >
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="250dp"
+     android:src="@drawable/color_money_bar"
+     android:id="@+id/money_title"/>
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textStyle="bold"
+     android:textColor="@color/write"
+     android:textSize="18dp"
+     android:id="@+id/money_todayMax"
+     android:layout_marginTop="90dp"
+     android:layout_marginLeft="20dp"
+     android:text="今日最高价:XXXX"/>
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textStyle="bold"
+     android:textColor="@color/write"
+     android:textSize="18dp"
+     android:id="@+id/money_todayMin"
+     android:layout_marginTop="10dp"
+     android:layout_below="@id/money_todayMax"
+     android:layout_alignLeft="@id/money_todayMax"
+     android:text="今日最低价:XXXX"
+     />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="18dp"
+       android:textColor="@color/write"
+       android:text="竞买价:XXXX"
+       android:textStyle="bold"
+       android:layout_marginRight="20dp"
+       android:layout_alignTop="@id/money_todayMax"
+       android:layout_alignParentEnd="true"
+       android:id="@+id/money_competitivePri"
+       android:layout_alignParentRight="true" />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@id/money_competitivePri"
+       android:layout_below="@id/money_competitivePri"
+       android:layout_alignTop="@id/money_todayMin"
+       android:text="竞卖价:XXXX"
+       android:id="@+id/money_reservePri"
+       android:textColor="@color/write"
+       android:textSize="18dp"
+       android:textStyle="bold"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="10dp"
+         android:textColor="@color/write"
+         android:textStyle="bold"
+         android:text="今日股票"
+         android:id="@+id/money_title_gupiao"
+         android:textSize="20dp"/>
+      <EditText
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+          android:textColor="@color/write"
+          android:id="@+id/gupiao_number"
+         android:layout_below="@id/money_title_gupiao"
+          android:hint="请填写股票序号"
+          />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:textSize="25dp"
+      android:textStyle="bold"
+      android:text="上证指数"
+      android:layout_below="@id/money_title"/>
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_below="@id/money_title"
+
+     android:id="@+id/gif_gupiao"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</RelativeLayout>
+
+</com.yalantis.phoenix.PullToRefreshView>

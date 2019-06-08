@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="50dp"
+     android:textSize="20dp"
+     android:text="起送时间：22：00"
+     android:id="@+id/kuaidi_starttime"
+     android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/ic_close"
+        android:id="@+id/kuaidi_close"
+
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/kuaidi_starttime"
+        android:layout_marginTop="5dp"
+        android:text="预计到达时间:34:00"
+        android:id="@+id/kuaidi_endtime"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kuaidi_endtime"
+        android:text="目前状态:平稳"
+        android:layout_marginTop="5dp"
+        android:id="@+id/kuaidi_zt"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"/>
+</RelativeLayout>

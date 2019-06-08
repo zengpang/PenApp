@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <io.codetail.widget.RevealFrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/re_sounds"
+          android:visibility="invisible"
+         android:background="@drawable/luying_background">
+
+
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/sounds_buju"
+
+
+                  >
+                  <ImageView
+                      android:layout_width="40dp"
+                      android:layout_height="40dp"
+                      android:src="@drawable/sounds_close"
+                      android:id="@+id/sounds_close"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="录音"
+                      android:layout_marginTop="3dp"
+                      android:textColor="@color/write"
+                      android:layout_centerHorizontal="true"
+                      android:textSize="25dp"
+                    />
+                  <ImageView
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:src="@drawable/sounds_mulu"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginTop="5dp"
+                      android:layout_alignParentRight="true" />
+
+
+                  <TextView
+                      android:id="@+id/sounds_times"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:text="00:03:00"
+                      android:textColor="@color/write"
+                      android:textSize="30dp" />
+                  <ImageView
+                      android:layout_width="25dp"
+                      android:layout_height="25dp"
+                      android:id="@+id/sounds_xunhuan"
+                      android:layout_alignTop="@+id/sounds_times"
+                      android:layout_toRightOf="@id/sounds_times"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginLeft="10dp"
+                      android:src="@drawable/sounds_xunhuan"/>
+                  <ImageView
+                      android:layout_width="25dp"
+                      android:layout_height="25dp"
+                      android:src="@drawable/sounds_yangshengqi"
+                      android:layout_alignTop="@id/sounds_times"
+                      android:layout_marginTop="8dp"
+                      android:layout_marginRight="10dp"
+                      android:layout_toLeftOf="@id/sounds_times"/>
+
+                  <ImageView
+                      android:id="@+id/sounds_button_start"
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"
+                      android:layout_centerHorizontal="true"
+                      android:layout_alignParentBottom="true"
+                      android:layout_marginBottom="100dp"
+
+                      android:background="@drawable/luyingqian" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toLeftOf="@id/sounds_button_start"
+                        android:src="@drawable/sounds_bofang"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/sound_bofang"
+                        android:layout_alignTop="@id/sounds_button_start"/>
+                     <ImageView
+                         android:layout_width="50dp"
+                         android:layout_height="50dp"
+                         android:src="@drawable/sounds_bofang_begin"
+                         android:layout_toRightOf="@id/sounds_button_start"
+                         android:layout_marginTop="20dp"
+                         android:layout_marginLeft="20dp"
+                         android:layout_alignTop="@id/sounds_button_start"/>
+
+
+
+
+
+              </RelativeLayout>
+
+      </FrameLayout>
+   </io.codetail.widget.RevealFrameLayout>
+</FrameLayout>

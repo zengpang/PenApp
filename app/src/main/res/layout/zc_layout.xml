@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:id="@+id/zc_tx_title"
+    android:orientation="vertical"
+    android:background="@color/seablue">
+
+</LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/self_user_heard"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zc_tx_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:id="@+id/zc_text1"
+        android:textColor="@color/seablue"
+        android:text="基础信息"/>
+     <EditText
+         android:layout_width="300dp"
+         android:layout_height="50dp"
+         android:layout_marginTop="10dp"
+         android:hint="请输入用户名"
+         android:textSize="20dp"
+         android:id="@+id/zc_username"
+         android:layout_alignLeft="@id/zc_text1"
+         android:layout_below="@id/zc_text1"/>
+       <EditText
+           android:layout_width="300dp"
+           android:layout_height="50dp"
+           android:layout_marginTop="10dp"
+           android:hint="请输入邮箱地址"
+           android:textSize="20dp"
+           android:id="@+id/zc_Email"
+
+           android:layout_alignLeft="@id/zc_username"
+           android:layout_below="@id/zc_username"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zc_Email"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@id/zc_text1"
+            android:textSize="20dp"
+            android:id="@+id/zc_text2"
+            android:textColor="@color/seablue"
+            android:text="私有信息"/>
+         <EditText
+             android:layout_width="300dp"
+             android:layout_height="50dp"
+             android:textSize="20dp"
+             android:id="@+id/zc_password"
+             android:password="true"
+             android:layout_marginTop="10dp"
+             android:layout_alignLeft="@id/zc_text2"
+             android:layout_below="@id/zc_text2"
+             android:hint="请输入密码" />
+          <EditText
+              android:layout_width="300dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="10dp"
+              android:hint="请输入手机号码"
+              android:textSize="20dp"
+              android:id="@+id/zc_number"
+              android:layout_alignLeft="@id/zc_password"
+              android:layout_below="@id/zc_password"/>
+           <com.dd.CircularProgressButton
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               app:cpb_textIdle="注  册"
+               android:textSize="20dp"
+               android:textColor="@color/write"
+               app:cpb_cornerRadius="48dp"
+               android:onClick="bt_zc_zc"
+               android:layout_alignLeft="@id/zc_number"
+               android:layout_below="@id/zc_number"
+               />
+</RelativeLayout>

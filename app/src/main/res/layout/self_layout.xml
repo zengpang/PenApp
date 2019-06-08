@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="228dp"
+    android:id="@+id/self_title"
+    android:src="@drawable/self_background"/>
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/self_head"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/user_head"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/self_head"
+        android:layout_marginTop="15dp"
+        android:text="XXXX用户"
+
+        android:textColor="@color/write"
+        android:id="@+id/self_username"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/self_head"/>
+     <com.dd.CircularProgressButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/self_head"
+         android:id="@+id/self_user_dc"
+         android:textColor="@color/write"
+         android:layout_marginTop="10dp"
+         app:cpb_textIdle="登  出"
+         app:cpb_cornerRadius="48dp"
+         android:layout_marginLeft="35dp"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/shuxin"
+        android:layout_below="@id/self_title">
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="79dp"
+            android:background="@color/dark_blue"
+            >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="25dp"
+             android:textColor="@color/write"
+             android:text="等级：21"
+             android:layout_centerVertical="true"
+             android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:background="@color/write">
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="198dp"
+            android:layout_height="79dp"
+            android:background="@color/dark_blue">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/write"
+                android:text="签到：22天"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/self_saying"
+        android:layout_below="@id/shuxin">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+
+            android:background="@color/dark_blue">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="好好学习，天天向上"
+                android:textSize="25dp"
+                android:textColor="@color/write"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="113dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/self_saying"
+        android:id="@+id/img_student"
+        android:src="@drawable/luyin_student" />
+     <ImageView
+         android:layout_width="100dp"
+         android:layout_height="130dp"
+         android:layout_below="@id/self_saying"
+         android:src="@drawable/self_work"
+         android:id="@+id/img_work"
+         android:layout_toRightOf="@id/img_student"/>
+
+       <RelativeLayout
+           android:layout_width="200dp"
+           android:layout_height="130dp"
+           android:layout_toRightOf="@id/img_work"
+           android:background="@color/green"
+           android:layout_below="@id/self_saying">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="30dp"
+               android:text="录音 "
+               android:id="@+id/self_luying_text"
+               android:textColor="@color/write"
+               android:textSize="30dp"
+               />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:text="+19"
+                 android:textColor="@color/write"
+                 android:textSize="30dp"
+
+                 android:layout_below="@id/self_luying_text"/>
+       </RelativeLayout>
+       <LinearLayout
+           android:layout_width="35dp"
+           android:layout_height="3dp"
+           android:layout_marginTop="180dp"
+           android:background="@color/write"
+           android:id="@+id/self_time_line"
+           android:orientation="horizontal"
+           android:layout_alignParentRight="true"></LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="时间"
+        android:layout_marginRight="3dp"
+        android:textColor="@color/write"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/self_time_line"/>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_marginTop="158dp"
+         android:text="13:00"
+         android:id="@+id/self_time"
+         android:textColor="@color/write"
+         />
+
+
+
+
+
+</RelativeLayout>

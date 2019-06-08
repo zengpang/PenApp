@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" 
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:bufferType="editable"
+        android:id="@+id/wenjian_name_sounds_dialog"
+        android:hint="录音名称"/>
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:hint="请输入标题"
+        android:textSize="20dp"
+        android:id="@+id/sounds_dialog_title"
+        android:layout_below="@id/wenjian_name_sounds_dialog"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:hint="请输入备注"
+        android:textSize="20dp"
+        android:id="@+id/sounds_text"
+        android:layout_below="@id/sounds_dialog_title"
+        android:layout_centerHorizontal="true"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20dp"
+          android:layout_marginTop="20dp"
+
+          android:layout_below="@id/sounds_text"
+          android:id="@+id/biaoqian_xuanze"
+          android:text="选择标签:"/>
+      <RadioGroup
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/xuanze_radio_all"
+          android:orientation="horizontal"
+          android:layout_alignTop="@id/biaoqian_xuanze"
+          android:layout_toRightOf="@id/biaoqian_xuanze">
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="27dp"
+              android:textSize="20dp"
+              android:id="@+id/xuanze_radio_work"
+              android:text="工作"/>
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="27dp"
+              android:textSize="20dp"
+              android:layout_marginLeft="2dp"
+              android:text="生活"/>
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="27dp"
+              android:textSize="20dp"
+              android:layout_marginLeft="2dp"
+              android:text="休息"/>
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="27dp"
+              android:textSize="20dp"
+              android:layout_marginLeft="2dp"
+              android:text="其他"/>
+
+
+      </RadioGroup>
+      <com.dd.CircularProgressButton
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:id="@+id/xuanze_right"
+          app:cpb_textIdle="准备说话"
+         android:textSize="30dp"
+          android:layout_alignParentBottom="true"/>
+
+
+
+
+
+</RelativeLayout>

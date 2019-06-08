@@ -1,0 +1,55 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".selfActivity">
+    <item
+        android:id="@+id/action_recyclerView"
+        android:icon="@drawable/self_hitory"
+        android:orderInCategory="100"
+        android:title="历史"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/self_weizhi"
+        android:orderInCategory="100"
+        android:title="位置"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/self_gupiao"
+        android:orderInCategory="100"
+        android:title="股票"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/start"
+        android:orderInCategory="100"
+        android:title="星座"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/self_qq"
+        android:orderInCategory="100"
+        android:title="QQ"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/self_card"
+        android:orderInCategory="100"
+        android:title="身份"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/self_cidian"
+        android:orderInCategory="100"
+        android:title="词典"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/self_news"
+        android:orderInCategory="100"
+        android:title="新闻"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/self_kuaidi"
+        android:orderInCategory="100"
+        android:title="快递"
+        app:showAsAction="always"/>
+
+
+
+
+</menu>

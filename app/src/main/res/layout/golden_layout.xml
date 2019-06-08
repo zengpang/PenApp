@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgrey">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="210dp"
+      android:id="@+id/re_golden"
+      android:background="@color/write"
+
+
+
+      >
+      <ImageView
+          android:layout_width="35dp"
+          android:layout_height="35dp"
+          android:layout_marginRight="5dp"
+          android:layout_marginTop="5dp"
+          android:src="@drawable/genxing"
+          android:id="@+id/golden_genxing"
+          android:layout_alignParentRight="true"/>
+      <ImageView
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:layout_marginLeft="3dp"
+          android:layout_marginTop="3dp"
+          android:id="@+id/goldem_icon"
+          android:src="@drawable/golden_icon"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="黄金数据"
+          android:layout_marginTop="2dp"
+          android:textSize="18dp"
+          android:layout_toRightOf="@id/goldem_icon"
+          android:layout_alignTop="@id/goldem_icon"/>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="40dp"
+         android:textSize="14dp"
+         android:id="@+id/golden_title"
+         android:text="黄金最新价"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:textSize="60dp"
+          android:id="@+id/golden_new_data"
+          android:layout_marginTop="5dp"
+          android:text="283.26元"
+
+          android:layout_below="@id/golden_title"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="开盘价:283.01元"
+           android:layout_marginBottom="25dp"
+           android:textSize="15dp"
+           android:layout_marginLeft="15dp"
+           android:id="@+id/openpri_golden"
+           android:layout_alignParentBottom="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="涨跌幅:0.09%"
+            android:id="@+id/limit_golden"
+            android:layout_alignTop="@id/openpri_golden"
+            android:layout_centerHorizontal="true"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@id/limit_golden"
+             android:layout_marginRight="15dp"
+             android:text="昨收价:283.01元"
+             android:id="@+id/yespri_golden"
+             android:layout_alignParentRight="true"/>
+  </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/re_golden_data_title"
+        android:orientation="horizontal"
+        android:layout_below="@id/re_golden">
+      <ImageView
+          android:layout_width="5dp"
+          android:layout_height="match_parent"
+          android:background="@color/gold_red"
+          android:id="@+id/golden_title_image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="净值数据"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="4dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+
+        android:background="@color/write"
+        android:id="@+id/re_golden_date"
+        android:layout_below="@id/re_golden_data_title">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/golden_date_listview">
+
+        </ListView>
+
+    </RelativeLayout>
+</RelativeLayout>

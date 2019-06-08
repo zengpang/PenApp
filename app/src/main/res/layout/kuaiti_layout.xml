@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:id="@+id/kuaidi_title"
+       android:background="@color/cpb_blue">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="我的订单"
+           android:textColor="@color/write"
+           android:textSize="25dp"
+           android:textStyle="bold"
+          />
+
+   </LinearLayout>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/kuaidi_back"
+        android:src="@drawable/back_kuaidi"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="请输入快递码:默认百世快递"
+        android:id="@+id/kuaidi_number"
+        android:layout_below="@+id/kuaidi_title"/>
+      <EditText
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:hint="请输入单号"
+          android:id="@+id/kuaidi_dan_number"
+          android:layout_marginTop="20dp"
+          android:layout_below="@+id/kuaidi_number"/>
+    <com.dd.CircularProgressButton
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/backgrey"
+        app:cpb_textIdle="查     询"
+        android:textColor="@color/write"
+        android:textSize="25dp"
+        android:layout_below="@id/kuaidi_dan_number"
+        android:id="@+id/bt_chaxun"
+        android:onClick="bt_fanyi"
+        app:cpb_cornerRadius="48dp"
+        android:layout_marginLeft="10dp"
+       />
+
+
+
+
+</RelativeLayout>

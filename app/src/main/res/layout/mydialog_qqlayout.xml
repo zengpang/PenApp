@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入QQ号码"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="23dp"
+        android:id="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+       />
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/qq_dialog_et"
+        android:password="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="退出"
+        android:id="@+id/qq_dialog_close"
+
+        android:textSize="20dp"
+
+        android:layout_alignRight="@id/qq_dialog_et"
+
+        android:layout_below="@id/qq_dialog_et"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/qq_dialog_close"
+        android:layout_marginRight="20dp"
+        android:text="确定"
+        android:textSize="20dp"
+        android:id="@+id/qq_dialog_qd"
+        android:textColor="@color/colorAccent"
+        android:layout_toLeftOf="@id/qq_dialog_close"/>
+
+
+</RelativeLayout>

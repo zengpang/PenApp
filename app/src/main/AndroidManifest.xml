@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.administrator.penapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/pen_icon"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".welcomeActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".when_page.drActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".loadActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".zc_acitivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".sounds_activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".ViewPage_Main" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".mapActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".money_Activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".selfActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".qq_activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".cidian_Activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".tianqi_Activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".card_Activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".news_Activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".kuaidi_Activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".souds_list_Activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".loading_news_Activity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".zhuanhuan_activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".start_activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".guanyu_Activity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".fengxiang_activity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:screenOrientation="portrait"/>
+
+
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3zMf8UrjgWmjh6P7rCGuyvskwARmLXIp" />
+        <service android:name="com.baidu.location.f" android:enabled="true"
+            android:process=":remote" android:permission="android.permission.BAIDU_LOCATION_SERVICE">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.4"></action>
+            </intent-filter>
+        </service>
+
+
+
+
+    </application>
+      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+        </uses-permission>
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+        </uses-permission>
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+        </uses-permission>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+        </uses-permission>
+        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+        </uses-permission>
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+        </uses-permission>
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+        </uses-permission>
+        <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+
+
+
+
+
+
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+          <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+          <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-sdk tools:overrideLibrary="com.xgc1986.parallaxpagerlibrary"/>
+
+     
+
+
+</manifest>

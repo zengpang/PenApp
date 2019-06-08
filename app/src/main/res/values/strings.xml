@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">笔墨纸砚</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="default_file_name">My Recording</string>
+    <string name="action_settings">Settings</string>
+</resources>

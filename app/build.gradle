@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "28.0.1"
+
+    defaultConfig {
+        applicationId "com.example.administrator.penapp"
+        multiDexEnabled true
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v13'
+    }
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+
+
+    })
+    compile 'com.android.support:appcompat-v7:27.+'
+    compile 'com.android.support:design:27.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.bumptech.glide:glide:4.8.0'
+    compile 'com.android.support:recyclerview-v7:27.+'
+    compile 'com.android.support:percent:27.1.1'
+    compile 'com.github.dmytrodanylyk.circular-progress-button:library:1.1.3'
+    compile 'com.github.jaouan:revealator:1.2.1'
+    compile 'com.yalantis:phoenix:1.2.3'
+    compile 'com.marshalchen.ultimaterecyclerview:library:0.7.3'
+    compile 'com.github.devlight.navigationtabstrip:navigationtabstrip:1.0.4'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okio:okio:1.11.0'
+    compile 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+    compile 'com.google.code.gson:gson:2.8.5'
+    compile 'com.tomer:fadingtextview:2.5'
+    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.7.0@aar'
+    compile 'io.reactivex:rxjava:1.1.3'
+    compile 'com.yarolegovich:discrete-scrollview:1.4.9'
+    compile 'com.xgc1986.android:parallaxpagertransformer:1.0.4'
+    compile 'com.github.zzz40500:AndroidSweetSheet:1.1.0'
+    compile 'de.hdodenhof:circleimageview:3.0.0'
+    compile 'com.liuguangqiang.ipicker:library:1.0.1'
+    compile 'com.yalantis:eqwaves:1.0.1'
+    compile 'com.github.Yalantis:GuillotineMenu-Android:1.2'
+    compile 'com.etsy.android.grid:library:1.0.5'
+    compile 'com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.6'
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
+    compile 'com.android.support:cardview-v7:27.+'
+    compile 'de.hdodenhof:circleimageview:3.0.0'
+    compile 'com.kaopiz:kprogresshud:1.2.0'
+
+
+
+
+
+
+
+
+
+
+    testCompile 'junit:junit:4.12'
+}

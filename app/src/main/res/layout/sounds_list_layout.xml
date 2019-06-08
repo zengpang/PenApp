@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+ <jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/sounds_list_swape">
+ <com.etsy.android.grid.StaggeredGridView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/sounds_list_grid_view"
+     app:item_margin="8dp"
+     app:column_count="2">
+
+ </com.etsy.android.grid.StaggeredGridView>
+ <ListView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+ </ListView>
+ </jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout>
+</RelativeLayout>

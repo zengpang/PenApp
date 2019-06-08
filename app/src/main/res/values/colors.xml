@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#323444</color>
+    <color name="write">#f9f9fa</color>
+    <color name="leftwrite">#ebebef</color>
+    <color name="seablue">#2a87de</color>
+    <color name="yellow">#ffee93</color>
+    <color name="dirt">#e2dbbe</color>
+    <color name="creatyellow">#DDf0ED</color>
+    <color name="creatred">#f17c67</color>
+    <color name="toumingwrite">#75fefeff</color>
+    <color name="main_grey">#aaaaae</color>
+    <color name="darkblack">#020002</color>
+    <color name="dreepgreen">#0a8f46</color>
+    <color name="green">#7CD696</color>
+    <color name="rightgreen">#40ef73</color>
+    <color name="worringgreen">#ea5160</color>
+    <color name="grey">#8d938e</color>
+    <color name="backgrey">#EFEFF5</color>
+    <color name="gold_red">#e24040</color>
+    <color name="dark_blue">#485699</color>
+    <color name="golden_green">#39f452</color>
+    <color name="orange_list_item">#ffffdc7e</color>
+    <color name="grey_list_item">#ffd3d3d3</color>
+    <color name="green_list_item">#ff8dd304</color>
+    <color name="blue_list_item">#ff82e0ff</color>
+    <color name="yellow_list_item">#fffffbae</color>
+    <color name="red_list_item">#fff10800</color>
+    <color name="list_item_pressed">#1A000000</color>
+
+</resources>

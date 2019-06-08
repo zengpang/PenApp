@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结果"
+        android:textStyle="bold"
+
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="23dp"
+        android:id="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/start_dialog_color"
+        android:textSize="25dp"
+        android:text="幸运色:123231"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="健康指数:123231"
+        android:id="@+id/start_dialog_health"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/start_dialog_color"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="今日概述:123231"
+        android:id="@+id/start_dialog_summary"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/start_dialog_health"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="退出"
+        android:id="@+id/start_dialog_close"
+        android:layout_marginRight="50dp"
+        android:textSize="20dp"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_below="@id/start_dialog_summary"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/start_dialog_close"
+        android:layout_marginRight="20dp"
+        android:text="确定"
+        android:textSize="20dp"
+        android:id="@+id/start_dialog_qd"
+        android:textColor="@color/colorAccent"
+        android:layout_toLeftOf="@id/start_dialog_close"/>
+
+</RelativeLayout>

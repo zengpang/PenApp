@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gupiao"
+            android:icon="@drawable/money_gupiao"
+            android:title="今日股票" />
+        <item
+            android:id="@+id/nav_money"
+            android:icon="@drawable/today_history"
+            android:title="历史上的今天" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/map_icon"
+            android:title="我的位置" />
+        <item
+            android:id="@+id/nav_setbt"
+            android:icon="@drawable/self_page"
+            android:title="个人主页" />
+    </group>
+
+    <item android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/nav_guanyu"
+                android:icon="@drawable/menu_guanyu"
+                android:title="关于app" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="分享" />
+        </menu>
+    </item>
+
+</menu>

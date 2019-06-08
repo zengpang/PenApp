@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/lishi_title"
+        android:background="@color/cpb_blue">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史上的今天"
+            android:textColor="@color/write"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/lishi_back"
+        android:src="@drawable/back_kuaidi"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lishi_text_title"
+
+        android:text="苏联开始实施第一个五年计划"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_below="@id/lishi_title"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lishi_neirong"
+        android:layout_below="@id/lishi_text_title"
+        android:text="在92年前的今天，1927年10月1日 (农历九月初六)，苏联开始实施第一个五年计划。"/>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="31dp"
+     android:id="@+id/text"
+     android:text="身份证信息查询"
+     android:layout_marginTop="20dp"
+     android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/card_number_et"
+        android:hint="请输入身份证号码号"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text"/>
+    <com.dd.CircularProgressButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/write"
+        android:textSize="20dp"
+        app:cpb_textIdle="查询"
+        android:id="@+id/caxun_bt_qq"
+        app:cpb_cornerRadius="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/card_number_et"/>
+</RelativeLayout>

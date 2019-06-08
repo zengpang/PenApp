@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:text="中文⇨英语"
+        android:layout_centerHorizontal="true"></TextView>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:id="@+id/line"
+       android:orientation="horizontal"
+       android:background="@color/black"
+       android:layout_marginTop="50dp">
+
+   </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@null"
+        android:id="@+id/et_fanyi_text"
+        android:layout_below="@id/line"/>
+    <com.dd.CircularProgressButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:background="@color/backgrey"
+        app:cpb_textIdle="翻译"
+        android:id="@+id/bt_fanyi"
+        android:onClick="bt_fanyi"
+        app:cpb_cornerRadius="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="190dp"
+        android:background="@color/black"
+        android:id="@+id/line2"
+        android:orientation="horizontal"
+        android:layout_below="@id/line">
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgrey"
+        android:layout_below="@id/line2"/>
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/write"
+         android:layout_marginTop="20dp"
+         android:layout_below="@id/line2">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="翻译结果"
+             android:textSize="23dp"
+             android:id="@+id/fanyi_text"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="5dp"/>
+     </RelativeLayout>
+
+    
+    
+</RelativeLayout>
